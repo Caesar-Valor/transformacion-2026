@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transformación 2026–2027 · Objetivos</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Literata:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-meta">Notion Dashboard · Transformación Personal 2026–2032</div>
+  <h1>Objetivos<br><span>Mes a Mes</span></h1>
+  <p class="header-sub">12 meses de fundamentos sólidos. Marzo 2026 → Febrero 2027. Inglés, Programación, Boxeo, Salud. Un sistema. Una dirección.</p>
+</header>
+
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat">
+    <div class="stat-label">Inglés / semana</div>
+    <div class="stat-value">12<span class="stat-unit"> h</span></div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">Programación / semana</div>
+    <div class="stat-value">8<span class="stat-unit"> h</span></div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">Boxeo / semana</div>
+    <div class="stat-value">1<span class="stat-unit"> h</span></div>
+  </div>
+  <div class="stat">
+    <div class="stat-label">Ejercicio / semana</div>
+    <div class="stat-value">5–6<span class="stat-unit"> días</span></div>
+  </div>
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="legend-item"><span class="dot" style="background:var(--accent-en)"></span> Inglés</div>
+  <div class="legend-item"><span class="dot" style="background:var(--accent-code)"></span> Programación</div>
+  <div class="legend-item"><span class="dot" style="background:var(--accent-box)"></span> Boxeo + Cuello</div>
+  <div class="legend-item"><span class="dot" style="background:var(--accent-health)"></span> Salud</div>
+  <div class="legend-item"><span class="dot" style="background:var(--accent-fin)"></span> Sistema & Tracking</div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <button class="tab active" onclick="filterCards('all', this)">Todo</button>
+  <button class="tab" onclick="filterCards('q1', this)">Q1 · Mes 1–3</button>
+  <button class="tab" onclick="filterCards('q2', this)">Q2 · Mes 4–6</button>
+  <button class="tab" onclick="filterCards('q3', this)">Q3 · Mes 7–9</button>
+  <button class="tab" onclick="filterCards('q4', this)">Q4 · Mes 10–12</button>
+</div>
+
+<!-- CARDS GRID -->
+<main>
+<div class="grid" id="grid">
+
+<!-- ══════════════════════════════ MES 1 ══════════════════════════════ -->
+<div class="card visible" data-q="q1" onclick="openModal(0)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q1 · Trimestre 1</div>
+      <div class="card-title">Cero Absoluto</div>
+      <div class="card-period">Mar 2026 · Semanas 1–4</div>
+    </div>
+    <div class="card-num">01</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Verb "to be" + Present Simple completo</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>500–800 palabras Anki (20/día)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>"Charlotte's Web" comenzado (50%+)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Journal diario en inglés (100 palabras)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Duolingo: Unit 1 completada</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>freeCodeCamp: HTML5 + CSS3 básico</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>VS Code + Git configurados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>GitHub: primer repo "learning-journey-2026"</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>5 proyectos HTML/CSS en GitHub</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Guardia ortodoxa natural y cómoda</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Movimiento básico de pies (adelante/atrás)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Isométricos cuello 4 planos (20s × 2)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Movilidad cervical activa sin carga</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-fin)"></span>Sistema</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Notion workspace "TRANSFORMACIÓN" creado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Despertar 5 AM: 20+ días de 30</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Manifiesto personal escrito y leído</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>4/4 semanas con tracking completado</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-en)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> Rutina 5 AM automática · Guardia de boxeo natural · Primeras 500 palabras en inglés</div>
+</div>
+
+<!-- ══════════════════════════════ MES 2 ══════════════════════════════ -->
+<div class="card visible" data-q="q1" onclick="openModal(1)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q1 · Trimestre 1</div>
+      <div class="card-title">Primer Golpe</div>
+      <div class="card-period">Abr 2026 · Semanas 5–8</div>
+    </div>
+    <div class="card-num">02</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Present Continuous + Have got / There is-are</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>1,000 palabras Anki acumuladas</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>"Charlotte's Web" completado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Primera clase Italki (30 min)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Entender 40–50% Peppa Pig sin subs</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Flexbox + CSS Grid dominados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>2 layouts responsivos en GitHub</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Tribute page + Survey form (freeCodeCamp)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>10+ commits en GitHub</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Jab técnico completo (mecánica correcta)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>100 jabs seguidos sin romper forma</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Combinación 1-1 (doble jab)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Isométricos cuello 30s sin problemas</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Inicio puente de cuello suave</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-health)"></span>Salud</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Push-ups: 3×10 con forma correcta</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Calistenia L/M/V: arraigada</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Sueño 7h+: 20+ noches de 28</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-code)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> 100 jabs seguidos · "Charlotte's Web" terminado · 1,000 palabras Anki</div>
+</div>
+
+<!-- ══════════════════════════════ MES 3 ══════════════════════════════ -->
+<div class="card visible" data-q="q1" onclick="openModal(2)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q1 · Trimestre 1</div>
+      <div class="card-title">La Combinación Base</div>
+      <div class="card-period">May 2026 · Semanas 9–12</div>
+    </div>
+    <div class="card-num">03</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Past Simple (regulares + 50 irregulares)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>2,000 palabras Anki acumuladas</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>"The Little Prince" completado (inglés)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Primera conversación 15 min (HelloTalk voz)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Italki: 2 clases/semana comenzadas</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>JavaScript: variables, control flow, functions</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Arrays y métodos (map, filter, reduce)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Primer proyecto desplegado (GitHub Pages)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Portfolio personal V1 online</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Cross completo con rotación de cadera</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Combinación 1-2 fluida en movimiento</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Footwork básico integrado al 1-2</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Puente de cuello: 30s × 3 estable</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Isométricos 40s sin problemas</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-fin)"></span>Sistema</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Grabarse en espejo: comparar mes 1 vs 3</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Review trimestral Q1 completado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>22–27 libros total al final del trimestre</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-box)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> Combinación 1-2 en movimiento · Puente de cuello estable · A2 temprano inglés</div>
+</div>
+
+<!-- ══════════════════════════════ MES 4 ══════════════════════════════ -->
+<div class="card visible" data-q="q2" onclick="openModal(3)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q2 · Trimestre 2</div>
+      <div class="card-title">La Esquiva</div>
+      <div class="card-period">Jun 2026 · Semanas 13–16</div>
+    </div>
+    <div class="card-num">04</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Going to vs Will + Can/Could/Should</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Phrasal verbs básicos: 20 dominados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>"Animal Farm" completado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Conversación cómoda 20 min sobre temas conocidos</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Italki: 2 clases/semana sostenidas</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>DOM manipulation + Event listeners</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Fetch API + localStorage</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>To-Do List + Weather App completados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Certificado freeCodeCamp: Responsive Design</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Slip derecho e izquierdo automáticos</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Combinación 1-1-2 fluida</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Banda elástica frontal y lateral: 3×12</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Band cuello sin dolor ni molestia</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-health)"></span>Salud</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Pull-ups: 3×5 (o negativas sólidas)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Correr 5K sin parar</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Meal prep dominingo → arraigado</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-en)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> Slip automático al ver jab · Band cuello sin molestia · A2 consolidado inglés</div>
+</div>
+
+<!-- ══════════════════════════════ MES 5 ══════════════════════════════ -->
+<div class="card visible" data-q="q2" onclick="openModal(4)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q2 · Trimestre 2</div>
+      <div class="card-title">El Gancho</div>
+      <div class="card-period">Jul 2026 · Semanas 17–20</div>
+    </div>
+    <div class="card-num">05</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Present Perfect + Past Continuous</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>3,000 palabras Anki acumuladas</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>"The Old Man and the Sea" completado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Blog personal en inglés: primer post</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>"Stranger Things" T1 con subs inglés</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Async/Await + Promises + Módulos</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Node.js + Express.js básico</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Pomodoro Timer + Quiz App</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Codewars: 8kyu dominado</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Hook con ambas manos + rotación de cadera</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Combinación 1-2-3 fluida</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Roll básico integrado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Band 4 planos: 3×12 fluido</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Puente de cuello avanzado</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-fin)"></span>Sistema</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Grabarse boxeando: comparar mes 3 vs 5</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Score semanal promedio: 7+/10</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-box)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> Hook con rotación visible · Band 4 planos fluido · 3,000 palabras inglés</div>
+</div>
+
+<!-- ══════════════════════════════ MES 6 ══════════════════════════════ -->
+<div class="card visible" data-q="q2" onclick="openModal(5)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q2 · Trimestre 2</div>
+      <div class="card-title">Revisión Semestral</div>
+      <div class="card-period">Ago 2026 · Semanas 21–24</div>
+    </div>
+    <div class="card-num">06</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>A2 completado — test online 75%+</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Writing: 500 palabras sin esfuerzo</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Conversación 20–30 min sobre variedad temas</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>6–8 libros en inglés completados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Listening: 70–80% comprensión con subs</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Full-stack app desplegada (blog/todo)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>MongoDB + Mongoose + JWT dominados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>20–25 proyectos en GitHub</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Certificado freeCodeCamp: JS Algorithms</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>1-2-3 fluido durante 1 round completo</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Combinación 2-3-2 con ritmo</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Test de fuerza cuello: registrar segundos</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Fase 2 cuello completada (banda)</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-fin)"></span>Sistema</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Review semestral Notion: Q1+Q2 completo</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Ingresos freelance: primeros $0–500/mes</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Primeros clientes / proyectos reales</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-fin)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> A2 inglés sólido · 20+ proyectos GitHub · Cuello Fase 2 completa · 1 round boxeo fluido</div>
+</div>
+
+<!-- ══════════════════════════════ MES 7 ══════════════════════════════ -->
+<div class="card visible" data-q="q3" onclick="openModal(6)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q3 · Trimestre 3</div>
+      <div class="card-title">Golpe Corto</div>
+      <div class="card-period">Sep 2026 · Semanas 25–28</div>
+    </div>
+    <div class="card-num">07</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Passive Voice + Reported Speech</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>5,000 palabras Anki acumuladas (meta B1)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>"1984" de Orwell comenzado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Blog técnico: 2 posts publicados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Italki: 3–4 clases/semana</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>React: JSX, Props, State, Hooks básicos</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>useEffect + useState dominados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Todo App + Movie Search en React</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>LeetCode: 10 problemas Easy resueltos</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Uppercut con transferencia de piernas</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Combinación 1-2-3-2</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Neck curl 2kg × 3×10 sin molestia</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Introducción placa libre Fase 3</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-health)"></span>Salud</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Push-ups: 3×20 con forma perfecta</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Pull-ups: 3×8 completos</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-code)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> React funcionando · Uppercut con piernas · Neck curl sin molestia · B1 inglés en ruta</div>
+</div>
+
+<!-- ══════════════════════════════ MES 8 ══════════════════════════════ -->
+<div class="card visible" data-q="q3" onclick="openModal(7)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q3 · Trimestre 3</div>
+      <div class="card-title">Defensa Activa</div>
+      <div class="card-period">Oct 2026 · Semanas 29–32</div>
+    </div>
+    <div class="card-num">08</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Conditional 1 & 2 + Modal verbs avanzados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>"1984" completado + "Brave New World" iniciado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Shadowing: 15 min/día arraigado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Conversación fluida 30–40 min</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Podcasts: "Stuff You Should Know" sin subs</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Context API + React Router dominados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>TypeScript básico integrado a React</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>E-commerce frontend + Dashboard analytics</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Codewars: alcanzar 7kyu</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Roll circular + Cover + Parry del jab</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Contraataque básico integrado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Roll + contraataque en 1 movimiento</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Neck curl + extension 3kg: 4×12</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-fin)"></span>Sistema</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Teléfono/PC cambiado a inglés</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>90% contenido consumido en inglés</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-en)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> Roll + contraataque fluido · Cuello 3kg · Conversación 30+ min · React + TypeScript</div>
+</div>
+
+<!-- ══════════════════════════════ MES 9 ══════════════════════════════ -->
+<div class="card visible" data-q="q3" onclick="openModal(8)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q3 · Trimestre 3</div>
+      <div class="card-title">Combinaciones Largas</div>
+      <div class="card-period">Nov 2026 · Semanas 33–36</div>
+    </div>
+    <div class="card-num">09</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>B1 consolidado — test online Cambridge</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>15–20 libros leídos en inglés acumulados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Presentar temas 10 min sin preparación</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Essays 500+ palabras con estructura correcta</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>IELTS equivalente: 5.5–6.0</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Node.js avanzado: logging, security, CORS</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>PostgreSQL + SQL avanzado + Prisma ORM</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Real-time chat con Socket.io</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>30+ proyectos totales GitHub</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>LeetCode: 30 Easy + 5 Medium</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Combo 5 golpes (1-2-3-6-2) sin perder guardia</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Pivot + side step integrados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Neck lateral con carga sin compensar</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Todo 4×12 cuello con peso</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-fin)"></span>Sistema</div>
+        <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Review trimestral Q3 en Notion</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Ingresos freelance: $500–1,500/mes</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-box)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> B1 inglés · Combo 5 golpes · Full-stack competente · 30+ proyectos GitHub</div>
+</div>
+
+<!-- ══════════════════════════════ MES 10 ══════════════════════════════ -->
+<div class="card visible" data-q="q4" onclick="openModal(9)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q4 · Trimestre 4</div>
+      <div class="card-title">Automatización</div>
+      <div class="card-period">Dic 2026 · Semanas 37–40</div>
+    </div>
+    <div class="card-num">10</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Mixed conditionals + Inversions avanzadas</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Vocabulario técnico CS/Security: 1,000+ términos</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>"Eloquent JavaScript" completado en inglés</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Blog técnico: 5 posts publicados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Mock interview técnico en inglés</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Docker + Docker Compose básico</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>CI/CD con GitHub Actions</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>GraphQL + Redis (caching) intro</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>40+ proyectos totales GitHub</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Footwork avanzado: ángulos y pivot</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Shadow boxing 15 min sin pensar golpes</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Cuello no se fatiga durante la sesión</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Series pesadas: resistencia muscular larga</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-fin)"></span>Sistema</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Perfil TryHackMe creado + primeras rooms</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>OWASP Top 10: lectura y comprensión base</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-code)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> Shadow boxing automático 15 min · Docker+CI/CD · B2 inglés en ruta · Cuello no se fatiga</div>
+</div>
+
+<!-- ══════════════════════════════ MES 11 ══════════════════════════════ -->
+<div class="card visible" data-q="q4" onclick="openModal(10)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q4 · Trimestre 4</div>
+      <div class="card-title">Fluidez Total</div>
+      <div class="card-period">Ene 2027 · Semanas 41–44</div>
+    </div>
+    <div class="card-num">11</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>7,000–8,000 palabras activas</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Conversación 60+ min sobre cualquier tema</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>"Sapiens" de Harari comenzado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Documentación GitHub proyectos en inglés</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Cover letter profesional en inglés redactada</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>REST API compleja (e-commerce) desplegada</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>3–5 proyectos full-stack complejos en portfolio</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>AWS basics: EC2, S3 intro</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>LeetCode: 50 Easy + 15 Medium</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Feints (amagues) básicos</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Ritmo propio y combinaciones espontáneas</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Sesión de shadow fluida en video</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Test de fuerza cuello: máxima registrada</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-health)"></span>Salud</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Push-ups: 3×25 sostenidos</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Cuerpo funcional y estético: visible</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-en)"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> Conversación 60 min · Sesión boxeo fluida en video · Portfolio full-stack sólido</div>
+</div>
+
+<!-- ══════════════════════════════ MES 12 ══════════════════════════════ -->
+<div class="card visible" data-q="q4" onclick="openModal(11)">
+  <div class="card-header">
+    <div class="card-meta">
+      <div class="card-quarter">Q4 · CIERRE AÑO 1</div>
+      <div class="card-title">Fundamentos Sólidos</div>
+      <div class="card-period">Feb 2027 · Semanas 45–48</div>
+    </div>
+    <div class="card-num">12</div>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-en)"></span>Inglés</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>A2 → B2 temprano recorrido completo</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>48h/mes × 12 = 576h totales invertidas</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>10–12 libros en inglés A1-B1 completados</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>IELTS equivalente: 6.0–6.5 (B2 entrada)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Blog activo + journal 250+ días escritos</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-code)"></span>Programación</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Full-stack competente (React + Node + SQL)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>40–50 proyectos GitHub públicos</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Portfolio online profesional activo</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Listo para trabajo junior o freelance</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>10 artículos técnicos publicados</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-box)"></span>Boxeo + Cuello</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>6 rounds shadow boxing completo: automático</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>4 golpes + esquivas + footwork sin pensar</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Fuerza cuello máxima consolidada</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Base técnica reconocida por instructor</div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-label"><span class="dot" style="background:var(--accent-fin)"></span>Sistema — Año Completo</div>
+      <div class="tasks">
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>22–27 libros totales leídos (ES + EN)</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Ejercicio 5+ días/sem × 52 semanas: ≥250 días</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Ingresos freelance: $500–1,500/mes</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Identidad transformada: soy disciplinado</div>
+        <div class="task" onclick="toggleTask(event, this)"><span class="check"></span>Review anual + plan Año 2 redactado</div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" style="background:var(--accent-fin); width: 0%;"></div></div>
+  <div class="card-footer"><strong>Meta clave:</strong> 6 rounds boxeo automático · B2 entrada inglés · Full-stack listo · Identidad nueva</div>
+</div>
+
+</div><!-- /grid -->
+</main>
+
+<!-- OVERLAY MODAL -->
+<div class="overlay" id="overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div>
+        <div class="card-quarter" id="m-quarter"></div>
+        <div class="card-title" id="m-title" style="font-family:Syne,sans-serif;font-size:22px;font-weight:800;color:#fff"></div>
+      </div>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <div class="modal-body" id="m-body"></div>
+  </div>
+</div>
+
+<script src="js/script.js">
+</script>
+
+</body>
+</html>
